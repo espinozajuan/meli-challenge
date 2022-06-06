@@ -1,0 +1,8 @@
+### Query Products
+
+GET http://localhost:5000/api/items/?q=iphone HTTP/1.1
+
+### Get Single Product
+
+GET http://localhost:5000/api/items/MLA931455240 HTTP/1.1
+
