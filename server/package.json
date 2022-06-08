@@ -11,10 +11,15 @@
   "name": "server",
   "type": "module",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build",
+    "build:ui": "cd ../react-front && npm install && npm run build",
+    "deploy": "git push heroku master",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy",
     "dev": "nodemon index.js"
   },
   "keywords": [],
