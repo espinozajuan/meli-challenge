@@ -36,3 +36,8 @@
 - Correr el cliente con npm run start
 
 ## Live Version: https://meli-challenge-fe.herokuapp.com/
+
+## To-Do
+- Implementar Next,js & TypeScript
+- Responsive Design
+- SEO
